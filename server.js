@@ -49,8 +49,12 @@ var windshaftConfig = {
     }, // See grainstore npm for other options
 
     // Parse params from the request URL
-    base_url: '/:cache_buster/database/:dbname/table/:table',
-    base_url_notable: '/:cache_buster/database/:dbname/table',
+    //base_url: '/:cache_buster/database/:dbname/table/:table',
+    //base_url: '/:cache_buster/database/otm_db/table/:table',
+    base_url: '/:cache_buster/database/otm2/table/:table',
+    //base_url_notable: '/:cache_buster/database/:dbname/table',
+    base_url_notable: '/:cache_buster/database/otm2/table',
+    //base_url_notable: '/:cache_buster/database/otm_db/table',
 
     // Tell server how to handle HTTP request 'req' (by specifying properties in req.params).
     req2params: function(req, callback) {
