@@ -1,0 +1,8 @@
+{
+    "username": "otm_user",
+    "dbname": "otm2",
+    "host": "127.0.0.1",
+    "password": "fdbambh$UnN389y8",
+    "port": "5432",
+    "redishost": "127.0.0.1"
+}
