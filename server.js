@@ -38,11 +38,11 @@ var windshaftConfig = {
     redis: {host: settings.redishost || '127.0.0.1', port: 6379},
 
     // How to access the database
-    postgres: { password: 'otm', user: 'otm' },
+    postgres: { password: 'fdbambh$UnN389y8', user: 'otm_user' },
     grainstore: {
         datasource: {
-            user: settings.username || 'otm',
-            password: settings.password || 'otm',
+            user: settings.username || 'otm_user',
+            password: settings.password || 'fdbambh$UnN389y8',
             host: settings.host || 'localhost',
             port: settings.port || 5432
         }
