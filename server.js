@@ -46,19 +46,23 @@ var windshaftConfig = {
     redis: {host: settings.redishost || '127.0.0.1', port: 6379},
 
     // How to access the database
-    postgres: { password: 'otm', user: 'otm' },
+    postgres: { password: 'fdbambh$UnN389y8', user: 'otm_user' },
     grainstore: {
         datasource: {
-            user: settings.username || 'otm',
-            password: settings.password || 'otm',
+            user: settings.username || 'otm_user',
+            password: settings.password || 'fdbambh$UnN389y8',
             host: settings.host || 'localhost',
             port: settings.port || 5432
         }
     }, // See grainstore npm for other options
 
     // Parse params from the request URL
-    base_url: '/:cache_buster/database/:dbname/table/:table',
-    base_url_notable: '/:cache_buster/database/:dbname/table',
+    //base_url: '/:cache_buster/database/:dbname/table/:table',
+    //base_url: '/:cache_buster/database/otm_db/table/:table',
+    base_url: '/:cache_buster/database/otm2/table/:table',
+    //base_url_notable: '/:cache_buster/database/:dbname/table',
+    base_url_notable: '/:cache_buster/database/otm2/table',
+    //base_url_notable: '/:cache_buster/database/otm_db/table',
 
     // Tell server how to handle HTTP request 'req' (by specifying properties in req.params).
     req2params: function(req, callback) {
